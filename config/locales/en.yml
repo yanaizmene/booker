@@ -1,0 +1,51 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+
+  add_transaction:									   "Add Transaction"
+  site_title:										       "Booker!"
+  footer_slogan:									     "an easiest bookkeeper service"
+  just_hit_the_button:								 "Just hit the button"
+  save:												         "Save"
+  add:												         "Add"
+  amount:											         "Amount"
+  outgo:											         "Outgo"
+  income:											         "Income"
+  date:												         "Date"
+  more:												         "More"	
+  email:                               "Email"
+  create:                              "Create"
+  create_wallet:                       "Create Wallet"
+  wallet:                              "Wallet"
+  signin:                              "Sign In"
+  signout:                             "Sign Out"
+  password:                            "Password"
+  thank_you_for_choosing:              "Thank You For Choosing"
+  your_wallet_is_closed_for_now:       "Your Wallet Is Closed For Now"
+  transactions:                        "Transactions" 
+  error:                               "Error"
+  open_your_wallet:                    "Open Your Wallet"
+  open_wallet:                         "Open Wallet"
+  go:                                  "Go"
+  description:                         "Description"
+  options:                             "Options"

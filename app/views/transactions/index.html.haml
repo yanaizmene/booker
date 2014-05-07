@@ -1,0 +1,45 @@
+%table.table
+  %thead
+    %tr
+      %th #
+      %th
+        = t :date
+      %th.align_right
+        = t :amount
+  %tbody
+    = render 'list'
+
+    - if @total / @per_page > 1
+      %tr
+        %td{:colspan => 3}
+          %button.btn.btn-info.btn-block.btn-more
+            =t :more
+
+:javascript
+  $(function() {
+    var offset  = 2;
+    var pages   = #{@total / @per_page};
+
+    $('.btn-more').on('click', function() {
+      var btn = $(this);
+      btn.text('loading...');
+
+      $.ajax('/transactions.js', {
+        dataType: 'html',
+        data: { offset: offset },
+        success: function(data) {
+          $(data).insertBefore(btn.parent().parent());
+
+          if(offset > pages)
+          {
+            btn.hide();
+          }
+          else
+          {
+            btn.text('#{t :more}');
+            offset++;      
+          }  
+        }
+      });
+    });
+  });

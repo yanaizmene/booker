@@ -1,0 +1,41 @@
+.hidden
+  %h1.cover-heading
+    =t :just_hit_the_button
+
+  %p.lead
+    %button.btn.btn-info.btn-block.btn-lg{:type => 'button'}
+      =t :add_transaction
+
+.masthead.clearfix
+  .inner            
+    %h3.masthead-brand
+      = t :add_transaction
+
+.row
+  .col-xs-12
+    = form_for(@transaction, html: {role: 'form'}, :authenticity_token => true) do |f|
+      .form-group
+        .input-group
+          = f.text_field :amount, :class => 'form-control input-lg', :type => 'number', :step => 'any', :placeholder => (t :amount)
+          %span.input-group-addon
+            = f.check_box :income
+      / .form-group      
+      /   .input-group
+      /     = f.text_field :amount, :class => 'form-control input-lg', :type => 'number', :step => 'any', :placeholder => (t :amount)
+      /     %span.input-group-btn
+      /       %button.btn.btn-primary.btn-lg
+      /         = t :options
+      .hid1den    
+        .form-group
+          = f.text_area :description, :class => 'form-control input-lg', :placeholder => (t :description)  
+      / .radio.outgo
+      /   %label
+      /     = f.radio_button :action, 1, :checked => true
+      /     = t :outgo
+      / .radio.income  
+      /   %label
+      /     = f.radio_button :action, 2
+      /     = t :income
+      / .row
+      /   .col-xs-8
+      = f.submit :class => 'btn btn-info btn-block btn-lg margin-top', :value => (t :add)

@@ -1,0 +1,103 @@
+I, [2014-05-07T00:19:01.190862 #18907]  INFO -- : listening on addr=/tmp/unicorn.booker.sock fd=11
+I, [2014-05-07T00:19:01.192450 #18907]  INFO -- : listening on addr=0.0.0.0:3000 fd=12
+I, [2014-05-07T00:19:01.192959 #18907]  INFO -- : worker=0 spawning...
+I, [2014-05-07T00:19:01.195649 #18907]  INFO -- : worker=1 spawning...
+I, [2014-05-07T00:19:01.196822 #18910]  INFO -- : worker=0 spawned pid=18910
+I, [2014-05-07T00:19:01.197283 #18910]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:19:01.198561 #18907]  INFO -- : master process ready
+I, [2014-05-07T00:19:01.198844 #18913]  INFO -- : worker=1 spawned pid=18913
+I, [2014-05-07T00:19:01.199156 #18913]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:19:02.598230 #18913]  INFO -- : worker=1 ready
+I, [2014-05-07T00:19:02.608366 #18910]  INFO -- : worker=0 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+I, [2014-05-07T00:24:28.402165 #19013]  INFO -- : unlinking existing socket=/tmp/unicorn.booker.sock
+I, [2014-05-07T00:24:28.402945 #19013]  INFO -- : listening on addr=/tmp/unicorn.booker.sock fd=11
+I, [2014-05-07T00:24:28.404306 #19013]  INFO -- : listening on addr=0.0.0.0:3000 fd=12
+I, [2014-05-07T00:24:28.404754 #19013]  INFO -- : worker=0 spawning...
+I, [2014-05-07T00:24:28.407653 #19013]  INFO -- : worker=1 spawning...
+I, [2014-05-07T00:24:28.408792 #19016]  INFO -- : worker=0 spawned pid=19016
+I, [2014-05-07T00:24:28.409245 #19016]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:24:28.410818 #19013]  INFO -- : master process ready
+I, [2014-05-07T00:24:28.412115 #19019]  INFO -- : worker=1 spawned pid=19019
+I, [2014-05-07T00:24:28.412556 #19019]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:24:29.823985 #19016]  INFO -- : worker=0 ready
+I, [2014-05-07T00:24:29.825460 #19019]  INFO -- : worker=1 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+I, [2014-05-07T00:26:36.898681 #19035]  INFO -- : unlinking existing socket=/tmp/unicorn.booker.sock
+I, [2014-05-07T00:26:36.899123 #19035]  INFO -- : listening on addr=/tmp/unicorn.booker.sock fd=10
+I, [2014-05-07T00:26:36.900023 #19035]  INFO -- : listening on addr=0.0.0.0:3000 fd=11
+I, [2014-05-07T00:26:36.900306 #19035]  INFO -- : worker=0 spawning...
+I, [2014-05-07T00:26:36.902919 #19035]  INFO -- : worker=1 spawning...
+I, [2014-05-07T00:26:36.903155 #19037]  INFO -- : worker=0 spawned pid=19037
+I, [2014-05-07T00:26:36.903475 #19037]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:26:36.905808 #19035]  INFO -- : master process ready
+I, [2014-05-07T00:26:36.906887 #19040]  INFO -- : worker=1 spawned pid=19040
+I, [2014-05-07T00:26:36.907480 #19040]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:26:38.321079 #19037]  INFO -- : worker=0 ready
+I, [2014-05-07T00:26:38.325974 #19040]  INFO -- : worker=1 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+I, [2014-05-07T00:26:48.723597 #19035]  INFO -- : reaped #<Process::Status: pid 19037 exit 0> worker=0
+I, [2014-05-07T00:26:48.723828 #19035]  INFO -- : reaped #<Process::Status: pid 19040 exit 0> worker=1
+I, [2014-05-07T00:26:48.724075 #19035]  INFO -- : master complete
+I, [2014-05-07T00:27:09.885223 #19070]  INFO -- : unlinking existing socket=/tmp/unicorn.booker.sock
+I, [2014-05-07T00:27:09.885409 #19070]  INFO -- : listening on addr=/tmp/unicorn.booker.sock fd=10
+I, [2014-05-07T00:27:09.885749 #19070]  INFO -- : listening on addr=0.0.0.0:3001 fd=11
+I, [2014-05-07T00:27:09.885882 #19070]  INFO -- : worker=0 spawning...
+I, [2014-05-07T00:27:09.887159 #19070]  INFO -- : worker=1 spawning...
+I, [2014-05-07T00:27:09.888589 #19070]  INFO -- : master process ready
+I, [2014-05-07T00:27:09.888547 #19072]  INFO -- : worker=0 spawned pid=19072
+I, [2014-05-07T00:27:09.888972 #19072]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:27:09.889965 #19075]  INFO -- : worker=1 spawned pid=19075
+I, [2014-05-07T00:27:09.890385 #19075]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:27:11.293947 #19075]  INFO -- : worker=1 ready
+I, [2014-05-07T00:27:11.298592 #19072]  INFO -- : worker=0 ready
+I, [2014-05-07T00:29:14.135375 #19070]  INFO -- : reaped #<Process::Status: pid 19072 exit 0> worker=0
+I, [2014-05-07T00:29:14.135656 #19070]  INFO -- : reaped #<Process::Status: pid 19075 exit 0> worker=1
+I, [2014-05-07T00:29:14.135916 #19070]  INFO -- : master complete
+I, [2014-05-07T00:46:27.740265 #19865]  INFO -- : unlinking existing socket=/tmp/unicorn.booker.sock
+I, [2014-05-07T00:46:27.740451 #19865]  INFO -- : listening on addr=/tmp/unicorn.booker.sock fd=9
+I, [2014-05-07T00:46:27.740764 #19865]  INFO -- : listening on addr=0.0.0.0:3001 fd=10
+I, [2014-05-07T00:46:27.740888 #19865]  INFO -- : worker=0 spawning...
+I, [2014-05-07T00:46:27.742186 #19865]  INFO -- : worker=1 spawning...
+I, [2014-05-07T00:46:27.743621 #19867]  INFO -- : worker=0 spawned pid=19867
+I, [2014-05-07T00:46:27.743741 #19865]  INFO -- : master process ready
+I, [2014-05-07T00:46:27.744056 #19867]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:46:27.745034 #19870]  INFO -- : worker=1 spawned pid=19870
+I, [2014-05-07T00:46:27.745468 #19870]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:46:29.150583 #19867]  INFO -- : worker=0 ready
+I, [2014-05-07T00:46:29.151464 #19870]  INFO -- : worker=1 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+I, [2014-05-07T00:46:40.560566 #19865]  INFO -- : reaped #<Process::Status: pid 19867 exit 0> worker=0
+I, [2014-05-07T00:46:40.560804 #19865]  INFO -- : reaped #<Process::Status: pid 19870 exit 0> worker=1
+I, [2014-05-07T00:46:40.561047 #19865]  INFO -- : master complete
+I, [2014-05-07T00:47:25.584188 #19894]  INFO -- : unlinking existing socket=/tmp/unicorn.booker.sock
+I, [2014-05-07T00:47:25.584367 #19894]  INFO -- : listening on addr=/tmp/unicorn.booker.sock fd=9
+I, [2014-05-07T00:47:25.584468 #19894]  INFO -- : worker=0 spawning...
+I, [2014-05-07T00:47:25.586886 #19894]  INFO -- : worker=1 spawning...
+I, [2014-05-07T00:47:25.587969 #19896]  INFO -- : worker=0 spawned pid=19896
+I, [2014-05-07T00:47:25.588747 #19896]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:47:25.589937 #19894]  INFO -- : master process ready
+I, [2014-05-07T00:47:25.590799 #19899]  INFO -- : worker=1 spawned pid=19899
+I, [2014-05-07T00:47:25.591390 #19899]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:47:26.993873 #19896]  INFO -- : worker=0 ready
+I, [2014-05-07T00:47:27.015864 #19899]  INFO -- : worker=1 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+I, [2014-05-07T00:48:41.538762 #19894]  INFO -- : SIGWINCH ignored because we're not daemonized
+I, [2014-05-07T00:51:30.719471 #19894]  INFO -- : reaped #<Process::Status: pid 19896 exit 0> worker=0
+I, [2014-05-07T00:51:30.719752 #19894]  INFO -- : reaped #<Process::Status: pid 19899 exit 0> worker=1
+I, [2014-05-07T00:51:30.719940 #19894]  INFO -- : master complete
+I, [2014-05-07T00:51:47.516101 #19913]  INFO -- : unlinking existing socket=/tmp/unicorn.booker.sock
+I, [2014-05-07T00:51:47.516923 #19913]  INFO -- : listening on addr=/tmp/unicorn.booker.sock fd=10
+I, [2014-05-07T00:51:47.517338 #19913]  INFO -- : worker=0 spawning...
+I, [2014-05-07T00:51:47.519927 #19913]  INFO -- : worker=1 spawning...
+I, [2014-05-07T00:51:47.520149 #19916]  INFO -- : worker=0 spawned pid=19916
+I, [2014-05-07T00:51:47.520411 #19916]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:51:47.530819 #19913]  INFO -- : master process ready
+I, [2014-05-07T00:51:47.532228 #19919]  INFO -- : worker=1 spawned pid=19919
+I, [2014-05-07T00:51:47.532723 #19919]  INFO -- : Refreshing Gem list
+I, [2014-05-07T00:51:48.927278 #19916]  INFO -- : worker=0 ready
+I, [2014-05-07T00:51:48.940758 #19919]  INFO -- : worker=1 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.

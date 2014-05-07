@@ -1,0 +1,17 @@
+.row
+  .col-xs-12
+    %h3
+      =t :create_wallet
+
+    - if @user.errors.any?
+      .alert.alert-danger
+        - @user.errors.full_messages.each do |msg|
+          %div
+          = msg
+      
+    = form_for(@user, html: {role: 'form'}, :authenticity_token => true) do |f|
+      .form-group
+        = f.text_field :email, :class => 'form-control input-lg', :type => 'email', :placeholder => (t :email)
+      .form-group
+        = f.text_field :password, :class => 'form-control input-lg', :type => 'password', :placeholder => (t :password)
+      = f.submit :class => 'btn btn-info btn-block btn-lg', :value => (t :create)
