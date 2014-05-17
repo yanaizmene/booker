@@ -101,3 +101,32 @@ I, [2014-05-07T00:51:48.927278 #19916]  INFO -- : worker=0 ready
 I, [2014-05-07T00:51:48.940758 #19919]  INFO -- : worker=1 ready
 [deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
 [deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+I, [2014-05-09T19:12:12.037693 #19913]  INFO -- : reaped #<Process::Status: pid 19916 exit 0> worker=0
+I, [2014-05-09T19:12:12.068702 #19913]  INFO -- : reaped #<Process::Status: pid 19919 exit 0> worker=1
+I, [2014-05-09T19:12:12.162711 #19913]  INFO -- : master complete
+I, [2014-05-17T14:46:31.265280 #13624]  INFO -- : listening on addr=/tmp/unicorn.booker.sock fd=10
+I, [2014-05-17T14:46:31.280858 #13624]  INFO -- : worker=0 spawning...
+I, [2014-05-17T14:46:31.283338 #13624]  INFO -- : worker=1 spawning...
+I, [2014-05-17T14:46:31.284370 #13627]  INFO -- : worker=0 spawned pid=13627
+I, [2014-05-17T14:46:31.284825 #13627]  INFO -- : Refreshing Gem list
+I, [2014-05-17T14:46:31.286072 #13624]  INFO -- : master process ready
+I, [2014-05-17T14:46:31.287216 #13630]  INFO -- : worker=1 spawned pid=13630
+I, [2014-05-17T14:46:31.287719 #13630]  INFO -- : Refreshing Gem list
+I, [2014-05-17T14:46:37.160613 #13630]  INFO -- : worker=1 ready
+I, [2014-05-17T14:46:37.160629 #13627]  INFO -- : worker=0 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+/home/yanaizmene/.rvm/gems/ruby-2.1.0/gems/unicorn-4.8.2/lib/unicorn/http_server.rb:206:in `pid=': Already running on PID:13624 (or pid=/home/yanaizmene/www/rails/booker/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/gems/unicorn-4.8.2/lib/unicorn/http_server.rb:135:in `start'
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/gems/unicorn-4.8.2/bin/unicorn_rails:209:in `<top (required)>'
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/bin/unicorn_rails:23:in `load'
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/bin/unicorn_rails:23:in `<main>'
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+/home/yanaizmene/.rvm/gems/ruby-2.1.0/gems/unicorn-4.8.2/lib/unicorn/http_server.rb:206:in `pid=': Already running on PID:13624 (or pid=/home/yanaizmene/www/rails/booker/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/gems/unicorn-4.8.2/lib/unicorn/http_server.rb:135:in `start'
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/gems/unicorn-4.8.2/bin/unicorn_rails:209:in `<top (required)>'
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/bin/unicorn_rails:23:in `load'
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/bin/unicorn_rails:23:in `<main>'
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'
+	from /home/yanaizmene/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
