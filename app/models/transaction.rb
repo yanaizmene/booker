@@ -1,6 +1,7 @@
 class Transaction < ActiveRecord::Base
   belongs_to :wallet
   belongs_to :location
+  belongs_to :category
 
   after_create :update_wallet_amount
   before_create :set_transaction_id

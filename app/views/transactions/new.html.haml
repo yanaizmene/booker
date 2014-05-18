@@ -19,6 +19,10 @@
           = f.text_field :amount, :class => 'form-control input-lg', :type => 'number', :step => 'any', :placeholder => (t :amount)
           %span.input-group-addon
             = f.check_box :income
+
+      .form-group      
+        = f.collection_select(:category_id, Category.all, :id, :name, {:prompt => (t :choose_category)}, {:class => 'form-control input-lg'})
+
       / .form-group      
       /   .input-group
       /     = f.text_field :amount, :class => 'form-control input-lg', :type => 'number', :step => 'any', :placeholder => (t :amount)

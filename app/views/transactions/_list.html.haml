@@ -3,10 +3,15 @@
     %td
       = t.transaction_id
     %td
-      = t.created_at.to_formatted_s(:short) 
-      %br
-      %span.description
-        = t.description
+      = t.created_at.to_formatted_s(:short)
+      - unless t.category.nil?
+        %span.description
+          = t.category.name 
+      - unless t.description.empty?
+        %br
+        %span.description
+          = t.description
+
     %td.amount{:class => (t.income? ? 'positive' : '')}
       = precede (t.income? ? '+' : '-') do
         = t.amount

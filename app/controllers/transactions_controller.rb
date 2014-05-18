@@ -7,7 +7,7 @@ class TransactionsController < ApplicationController
 
   	@total			    = current_wallet.transactions.count
   	@transactions 	= current_wallet.transactions.order(created_at: :desc).limit(@per_page).offset(@offset).all()
-   	
+   	#raise @transactions.first.category.name.inspect
     respond_to do |format|
       format.html
 	    format.js { render partial: 'list', :layout => false }
@@ -29,7 +29,7 @@ class TransactionsController < ApplicationController
 
   private
     def transaction_params
-      params.require(:transaction).permit(:amount, :income, :description)
+      params.require(:transaction).permit(:amount, :income, :description, :category_id)
     end
 
     def require_login
