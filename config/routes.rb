@@ -16,7 +16,7 @@ Booker::Application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  resources :transactions, :user_sessions, :users
+  resources :transactions, :user_sessions, :users, :reports
 
   #map.resource :user_session
   #map.root :controller => "user_sessions", :action => "new" # optional, this just sets the root route

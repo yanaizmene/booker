@@ -17,6 +17,10 @@
 
 :javascript
   $(function() {
+    $('tbody tr').on('taphold', function() {
+      alert('aaa');
+    });
+
     var offset  = 2;
     var pages   = #{@total / @per_page};
 

@@ -10,18 +10,13 @@
     
     %meta{content: "", name: "description"}
     %meta{content: "", name: "author"}
-
-    %meta{content: "yes", name: "apple-mobile-web-app-capable"}
-    %meta{content: "black-translucent", name: "apple-mobile-web-app-status-bar-style"}
-    %meta{content: "yes", name: "apple-touch-fullscreen"}
-    %meta{content: "yes", name: "mobile-web-app-capable"}
-
+    
     %title Cover Template for Bootstrap
 
     = stylesheet_link_tag "bootstrap.min", media: "all"
     = stylesheet_link_tag "style", media: "all"
 
-    = javascript_include_tag 'jquery-2.1.1.min.js', 'application', 'rails', 'fastclick.js', 'jquery.mobile.custom.min'
+    = javascript_include_tag 'jquery-2.1.1.min.js', 'application', 'rails', 'fastclick.js', 'jquery.mobile.custom.min.js', 'highcharts', 'highcharts-3d'
   %body
     .navbar.navbar-default.navbar-static-top{'role' => 'navigation'}
       .container
@@ -41,6 +36,8 @@
             - if @current_user
               %li.ac1tive
                 = link_to (t :transactions), transactions_url
+              %li
+                = link_to (t :reports), reports_url  
             %li
               - if @current_user
                 = link_to (t :signout), logout_url
@@ -50,6 +47,7 @@
             - if @current_user.nil?
               %li
                 = link_to (t :create_wallet), register_url
+
     .site-wrapper
       .site-wrapper-inner
         .cover-container
@@ -66,4 +64,5 @@
     :javascript
       $(function() {
         FastClick.attach(document.body);
+        $.event.special.tap.tapholdThreshold = 350;
       });
