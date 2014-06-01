@@ -9,7 +9,9 @@ class UserSessionsController < ApplicationController
   def create
     @user_session = UserSession.new(params[:user_session], :remember_me => true)
     if @user_session.save
-      flash[:notice] = "Login successful!"
+      flash[:notice]      = "Login successful!"
+      session[:wallet_id] = current_user.wallets.first
+      
       redirect_to new_transaction_url
     else
       render :action => :new

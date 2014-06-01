@@ -142,3 +142,6 @@ Value of local variable is 2
 Value of local variable is 3
 Value of local variable is 4
 Value of local variable is 5
+I, [2014-05-20T19:20:27.273169 #13624]  INFO -- : reaped #<Process::Status: pid 13627 exit 0> worker=0
+I, [2014-05-20T19:20:27.273597 #13624]  INFO -- : reaped #<Process::Status: pid 13630 exit 0> worker=1
+I, [2014-05-20T19:20:27.273972 #13624]  INFO -- : master complete

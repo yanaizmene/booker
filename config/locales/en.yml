@@ -50,3 +50,7 @@ en:
   description:                         "Description"
   options:                             "Options"
   choose_category:                     "Choose Category"
+  add_wallet:                          "Add Wallet"
+  wallet_name:                         "Wallet Name"
+  choose_currency:                     "Choose Currency"
+  currency:                            "Currency"

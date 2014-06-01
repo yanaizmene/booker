@@ -17,7 +17,7 @@
       .alert.alert-danger
         - @transaction.errors.full_messages.each do |msg|
           %div
-          = msg
+            = msg
 
     = form_for(@transaction, html: {role: 'form'}, :authenticity_token => true) do |f|
       .form-group

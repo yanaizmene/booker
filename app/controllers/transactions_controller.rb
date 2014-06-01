@@ -11,6 +11,8 @@ class TransactionsController < ApplicationController
     # end
 
     # raise 1.inspect
+    #raise current_wallet.inspect
+    #set_current_wallet(7);
 
   	@per_page		    = 10
   	@offset 		    = params[:offset] ? (params[:offset].to_i - 1) * @per_page : 0

@@ -1,4 +1,6 @@
 Booker::Application.routes.draw do
+  resources :currencies
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -16,7 +18,7 @@ Booker::Application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  resources :transactions, :user_sessions, :users, :reports
+  resources :transactions, :user_sessions, :users, :reports, :wallets
 
   #map.resource :user_session
   #map.root :controller => "user_sessions", :action => "new" # optional, this just sets the root route

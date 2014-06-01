@@ -28,8 +28,7 @@
             %span.icon-bar
           -if @current_user  
             %a.navbar-brand{'href' => '/'}
-              = @current_user.wallets.first.amount
-              UAH
+              = number_to_currency(@current_wallet.amount, locale: :ua)
               %span.glyphicon.glyphicon-plus
         .navbar-collapse.collapse{style: "height: auto;"}
           %ul.nav.navbar-nav
