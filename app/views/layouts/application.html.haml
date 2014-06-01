@@ -26,24 +26,47 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          -if @current_user  
-            %a.navbar-brand{'href' => '/'}
-              = number_to_currency(@current_wallet.amount, locale: :ua)
-              %span.glyphicon.glyphicon-plus
+          -if @current_user
+            .btn-group
+              %a.btn.btn-success{'href' => '/'}
+                = number_to_currency(current_wallet.amount, :unit => current_wallet.currency.symbol, format: '%n %u')
+              %button.btn.btn-success.dropdown-toggle{'type' => 'button', 'data-toggle' => 'dropdown'}
+                %span.caret
+                %span.sr-only
+                  Toggle Dropdown
+                
+  
+              %ul.dropdown-menu{'role' => 'menu'}
+                - current_user.wallets.where('current IS NULL').each do |w|
+                  %li
+                    %a{'href' => '/wallets/set_wallet/' + w.wallet_id.to_s,  'data-no-turbolink' => true}
+                      = w.name
+                      (
+                      = number_to_currency(w.amount, :unit => w.currency.symbol, format: '%n %u')
+                      )
+
+
+
+
+
+
+            / %a.navbar-brand{'href' => '/'}
+            /   
+            /   %span.glyphicon.glyphicon-plus
         .navbar-collapse.collapse{style: "height: auto;"}
           %ul.nav.navbar-nav
-            - if @current_user
+            - if current_user
               %li.ac1tive
                 = link_to (t :transactions), transactions_url
               %li
                 = link_to (t :reports), reports_url  
             %li
               - if @current_user
-                = link_to (t :signout), logout_url
+                = link_to (t :close_wallet), logout_url
               - else
                 = link_to (t :open_wallet), login_url
             
-            - if @current_user.nil?
+            - if current_user.nil?
               %li
                 = link_to (t :create_wallet), register_url
 

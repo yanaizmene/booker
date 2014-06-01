@@ -1,0 +1,32 @@
+.hidden
+  %h1.cover-heading
+    =t :just_hit_the_button
+
+  %p.lead
+    %button.btn.btn-info.btn-block.btn-lg{:type => 'button'}
+      =t :add_wallet
+
+.masthead.clearfix
+  .inner            
+    %h3.masthead-brand
+      = t :add_wallet
+
+.row
+  .col-xs-12
+    - if @wallet.errors.any?
+      .alert.alert-danger
+        - @wallet.errors.full_messages.each do |msg|
+          %div
+            = msg
+
+    = form_for(@wallet, html: {role: 'form'}, :authenticity_token => true) do |f|
+      .form-group
+        = f.text_field :name, :class => 'form-control input-lg', :placeholder => (t :wallet_name), :required => true
+      
+      .form-group
+        = f.text_field :amount, :class => 'form-control input-lg', :type => 'number', :step => 'any', :placeholder => (t :amount)
+
+      .form-group      
+        = f.collection_select(:currency_id, Currency.all.order('name'), :id, :name, {:prompt => (t :choose_currency)}, {:class => 'form-control input-lg'})
+      
+      = f.submit :class => 'btn btn-info btn-block btn-lg margin-top', :value => (t :add)

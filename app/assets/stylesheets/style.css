@@ -189,6 +189,15 @@ body {
   text-align: right;
 }
 
+.navbar-header .btn-group {
+  margin-top: 8px;
+}
+
+.navbar-header .btn-group .dropdown-menu {
+  text-align: left;
+}
+
+
 /*
  * Affix and center
  */

@@ -17,10 +17,6 @@ class ApplicationController < ActionController::Base
 
     def current_wallet
       return @current_wallet if defined?(@current_wallet)
-      @current_wallet = current_user.wallets.find(session[:wallet_id])
-    end
-
-    def set_current_wallet(wallet_id)
-      session[:wallet_id] = wallet_id;
+      @current_wallet = current_user.wallets.find_by(current: true)
     end
 end

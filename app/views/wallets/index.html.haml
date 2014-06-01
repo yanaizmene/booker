@@ -1,0 +1,21 @@
+%table.table
+  %thead
+    %tr
+      %th #
+      %th
+        = t :name
+      %th
+        = t :amount
+      %th
+        = t :currency
+  %tbody
+    - @current_user.wallets.each_with_index do |w, i|
+      %tr
+        %td
+          = w.wallet_id
+        %td
+          = w.name  
+        %td
+          = w.amount
+        %td.align_center
+          = w.currency.code

@@ -46,6 +46,7 @@ en:
   error:                               "Error"
   open_your_wallet:                    "Open Your Wallet"
   open_wallet:                         "Open Wallet"
+  close_wallet:                        "Close Wallet"
   go:                                  "Go"
   description:                         "Description"
   options:                             "Options"

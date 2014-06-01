@@ -27,6 +27,7 @@ class TransactionsController < ApplicationController
   end
 
   def new
+    #current_wallet
   	@transaction = current_user.transactions.new
   end
   

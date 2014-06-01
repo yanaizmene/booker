@@ -19,7 +19,7 @@ Booker::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :transactions, :user_sessions, :users, :reports, :wallets
-
+  get ':controller(/:action(/:id))'
   #map.resource :user_session
   #map.root :controller => "user_sessions", :action => "new" # optional, this just sets the root route
   # Example resource route with options:
